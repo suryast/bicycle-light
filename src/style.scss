@@ -1,0 +1,89 @@
+body{
+  background-color: #444;
+  background: repeating-linear-gradient(45deg, #2b2b2b 0%, #2b2b2b 10%, #222222 0%, #222222 50%) 0 / 15px 15px;
+}
+
+button{
+  background-color: #4d4d4d; 
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+}
+
+.wrapper{
+  text-align: center;
+}
+
+.box{
+  margin: 2rem auto; 
+  border: 5px solid #2d2d2d;
+  height: 270px;
+  width: 80px;
+  border-radius: 10px;
+}
+
+.grid{
+  display: grid;
+  grid-auto-rows: 50px;
+  gap: 1rem;
+  padding: 10px;
+}
+
+.high-beam{
+  background-color: #fff;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin:  auto;
+  box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red, 0 0 35px red, 0 0 40px red;
+}
+
+.low-beam{
+  background-color: #fff;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin:  auto;
+  box-shadow: 0 0 5px #fff, 0 0 10px red, 0 0 15px red, 0 0 20px red, 0 0 35px red, 0 0 40px red;
+}
+
+.shine{
+  background-color: #fff;
+  animation: neon 0.2s ease infinite;
+}
+
+.alter-one{
+  background-color: #fff;
+  animation: neon 0.375s ease infinite;
+}
+
+.alter-two{
+  animation: neon2 0.78s ease infinite;
+}
+
+.off{
+  background-color: grey;
+  box-shadow: none;
+}
+
+@keyframes neon {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red, 0 0 200px red;
+  }
+  to {
+    box-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px red, 0 0 35px red, 0 0 40px red, 0 0 50px red, 0 0 75px red;
+  }
+}
+
+@keyframes neon2 {
+  from {
+    box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px red, 0 0 70px red, 0 0 80px red, 0 0 100px red, 0 0 150px red, 0 0 200px red;
+  }
+  to {
+    background-color: #fff;
+  }
+}
